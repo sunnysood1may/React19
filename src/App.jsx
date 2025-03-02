@@ -13,6 +13,10 @@ import College from './College';
 import Student from './Student'
 import Department from './Department'
 import Details from './Dedatils'
+import First from './First'
+import Markup from './Markup'
+import State from './State'
+import Toggle from './Toggle'
 
 function App() {
 
@@ -21,6 +25,8 @@ function App() {
     <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/first" element={<First />} />
+        <Route path="/markup" element={<Markup />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
 
@@ -29,6 +35,8 @@ function App() {
           <Route path="department" element={<Department />} />
           <Route path="details" element={<Details />} />
         </Route>
+        <Route path="/state" element={<State />} />
+        <Route path="/toggle" element={<Toggle />} />
 
         <Route path='/*' element={<PageNotFound />} />
         {/* redirect to login page if invalid url is opened in browser*/}

@@ -6,7 +6,7 @@ function NavBar() {
     <div className="header">
       <div>
         <Link className="link" to={"/"}>
-          <h2>Logo</h2>
+          <img width="200" src="https://www.pinpng.com/pngs/m/444-4442053_maersk-group-logo-maersk-line-hd-png-download.png" />
         </Link>
       </div>
       <div>
@@ -14,6 +14,16 @@ function NavBar() {
           <li>
             <Link className="link" to="/">
               Home
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/first">
+              First
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/markup">
+              Markup
             </Link>
           </li>
           <li>
@@ -31,6 +41,16 @@ function NavBar() {
               College
             </Link>
           </li>
+          <li>
+            <Link className="link" to="/state">
+              State
+            </Link>
+          </li>
+          <li>
+            <Link className="link" to="/toggle">
+              Toggle
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,3 +58,4 @@ function NavBar() {
 }
 
 export default NavBar;
+export const userKey = "123456";
