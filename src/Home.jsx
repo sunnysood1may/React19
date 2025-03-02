@@ -11,7 +11,6 @@ function Home() {
       <button onClick={() => setCounter(counter + 1)}>
         Increase Counter Val
       </button>
-      <User />
     </>
   );
 }
